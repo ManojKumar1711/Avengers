@@ -1,0 +1,53 @@
+{% extends 'hello/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container" style="margin-top: 100px">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{% static 'hello/images/avengers1.jpg' %}" class="card-img-top" alt="..."
+                         style="height: 250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers</h5>
+                        <p class="card-text">Nick Fury is compelled to launch the Avengers Initiative when Loki poses a
+                            threat to planet Earth. His squad of superheroes put their minds together to accomplish the
+                            task.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">The Beginning</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{% static 'hello/images/ageofultron.jpg' %}" class="card-img-top" alt="..."
+                         style="height: 250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Age of Ultron</h5>
+                        <p class="card-text">Tony Stark builds an AI system named Ultron with the
+                            help of Bruce Ban. When the sentient Ultron makes plans to wipe out the human race, the
+                            Avengers set out to stop him.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">The Continuation</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{% static 'hello/images/endgame.jpg' %}" class="card-img-top" alt="..."
+                         style="height: 250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Endgame</h5>
+                        <p class="card-text">After Thanos, an intergalactic warlord, disintegrates half of the universe,
+                            the Avengers must reunite and assemble again to reinvigorate their trounced allies and
+                            restore balance.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">The Conclusion</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
